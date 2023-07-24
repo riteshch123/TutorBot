@@ -2,3 +2,8 @@ streamlit
 langchain
 openapi
 python-dotenv
+logging
+os
+requests
+json
+argparse
