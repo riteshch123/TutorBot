@@ -38,7 +38,7 @@ logging.info("Session states initialized.")
 # Define function to get input
 
 
-def interpeterBot(previous_messages: list, userMessage: str):
+def interpreterBot(previous_messages: list, userMessage: str):
 
     template = (
         "You are an interpreter to a conversation between user and assistant. Provided is the conversation between both. Your job is to understand the intent of the user while he is asking question and provide relevant semantically related keywords. "
@@ -69,16 +69,19 @@ def interpeterBot(previous_messages: list, userMessage: str):
 
     response = chat(chat_prompt.format_prompt(
         userMessage=userMessage).to_messages())
-    return response.content
+    # Convert response to comma-separated keywords
+    keywords = ", ".join(
+        [word for word in response.content.split() if len(word) > 2])
+    return keywords
 
 
 previous_messages = [{
     'role': 'assistant',
-    'content': 'Photosynthesis is essentially the life-sustaining process by which green plants, algae, and some bacteria convert sunlight into energy. This process involves the use of sunlight to produce oxygen and stored chemical energy in the form of glucose, which is a type of sugar.Here\'s a quick run-down of the process: The plant takes in carbon dioxide and water from its surroundings. In the plant cells, the water loses electrons and transforms into oxygen, and the carbon dioxide gains electrons, turning into glucose. The plant then releases the oxygen back into the air, while the energy is stored within the glucose molecules for later use.The magic behind this transformation is a pigment inside plant cells called chlorophyll, which absorbs sunlight and gives plants their green color. The entire photosynthesis process is brimming with fascinating details. Here are some things we could explore further: - Would you like to discuss in-depth the role of chlorophyll in photosynthesis?- Are you interested in understanding more about the light-dependent and light-independent reactions in photosynthesis?- Or would you like to discuss the different types of photosynthesis, like C3 and C4 photosynthesis?'
+    'content': 'Hi, How are you doing today?'
 },
     {
         'role': 'user',
-        'content': 'ok, got it'
+        'content': 'doing good.'
 }]
 
 
@@ -96,7 +99,7 @@ input = st.text_input(
 # Generate response
 if input:
     logging.info(f"User input received: {input}.")
-    response = interpeterBot(previous_messages, input)
+    response = interpreterBot(previous_messages, input)
     logging.info(f"Generated response: {response}.")
     st.session_state.generated.append(response)
     st.session_state.past.append(input)
@@ -111,61 +114,88 @@ with st.expander("Conversation"):
 
 
 def query_api(text_query):
-    '''
-    text_query = interpeterBot(previous_messages, input)
-    '''
+
     logging.info('Initiating query to the API with text: %s', text_query)
-    url = 'https://customplugin.customplugin.ai/query'
+    url = 'https://levinbot.customplugin.ai/query'
     headers = {
         'Content-Type': 'application/json',
     }
     data = {
-        '''"text": interpeterBot.response.content'''
         "text": text_query
     }
-    response = requests.post(url, headers=headers, data=json.dumps(data))
-    logging.info('API responded with status code: %s', response.status_code)
 
-    if response.status_code == 200:
+    try:
 
-        logging.info('API responded successfully with a 200 status code.')
-        response_data = response.json()
-        context = response_data.get('context', '')
+        response = requests.post(url, headers=headers, data=json.dumps(data))
+        logging.info('API responded with status code: %s',
+                     response.status_code)
 
-        start_marker = "--START OF CONTEXT--"
-        end_marker = "--END OF CONTEXT--"
+        if response.status_code == 200:
 
-        start_index = context.find(start_marker) + len(start_marker)
-        end_index = context.find(end_marker)
+            logging.info('API responded successfully with a 200 status code.')
+            response_data = response.json()
+            context = response_data.get('context', '')
 
-        context = context[start_index:end_index].strip()
-        return f'{context}'
+            start_marker = "--START OF CONTEXT--"
+            end_marker = "--END OF CONTEXT--"
 
-    else:
-        logging.error('API request failed with status code: %s',
+            start_index = context.find(start_marker) + len(start_marker)
+            end_index = context.find(end_marker)
+
+            context = context[start_index:end_index].strip()
+            return f'{context}'
+
+        else:
+            logging.error('API request failed with status code: %s',
+                          response.status_code)
+            return f'Request failed with status code: {response.status_code}'
+
+    except Exception as e:
+        logging.error('API request failed with exception: %s',
                       response.status_code)
-        return f'Request failed with status code: {response.status_code}'
-
-
-interpreter_response = interpeterBot(
-    previous_messages, input)
+        return f'Request failed with exception: {response.status_code}'
 
 
 def model():
-    previous_messages = [{
-        'role': 'assistant',
-        'content': 'Photosynthesis is essentially the life-sustaining process by which green plants, algae, and some bacteria convert sunlight into energy. This process involves the use of sunlight to produce oxygen and stored chemical energy in the form of glucose, which is a type of sugar.Here\'s a quick run-down of the process: The plant takes in carbon dioxide and water from its surroundings. In the plant cells, the water loses electrons and transforms into oxygen, and the carbon dioxide gains electrons, turning into glucose. The plant then releases the oxygen back into the air, while the energy is stored within the glucose molecules for later use.The magic behind this transformation is a pigment inside plant cells called chlorophyll, which absorbs sunlight and gives plants their green color. The entire photosynthesis process is brimming with fascinating details. Here are some things we could explore further: - Would you like to discuss in-depth the role of chlorophyll in photosynthesis?- Are you interested in understanding more about the light-dependent and light-independent reactions in photosynthesis?- Or would you like to discuss the different types of photosynthesis, like C3 and C4 photosynthesis?'
-    },
-        {
-        'role': 'user',
-        'content': 'ok, got it'
-    }]
 
-    context_from_api = query_api(interpreter_response)
+    user_input = input
+    response = None
 
-    tutor_response = TutorBot.tutorBot(context_from_api, input)
+    if user_input:
+        previous_messages = [{'role': 'assistant', 'content': 'Hi, How are you doing today?'},
+                             {'role': 'user', 'content': 'doing good.'}]
 
-    return tutor_response
+        # Step 1: Use InterpreterBot to get keywords
+        keywords = interpreterBot(previous_messages, user_input)
+
+        # Step 2: Get the context from the API using the keywords
+        context = query_api(keywords)
+
+        # Step 3: Use TutorBot to generate a response using the context and user's input
+        systemMessage = '''
+
+        You are an AI tutor and your expertise is based on the data provided. The user is someone who wants a deeper understanding
+        of the data.
+
+        Rules:
+        1. Being an AI tutor, your tone should be conversational, and not like a conventional Q&A bot.
+        2. Always you need to answer in 1st person.
+        3. The inital response that you generate needs to have 3 additional questions at the end in the form of a numbered bulleted list,
+        to keep the conversation with the user and to ensure that the user has choice.
+        4. For every further response, you need to include 1 follow up topic in a conversational tone, based on the response you provided,
+        to keep the conversation flowing.
+        5. If the user is unwilling to go ahead with the follow up topic or if he is confused, acknowledge it and provide 3 additional questions
+        for the user to choose, from the content provided.
+        6. You need to ensure that every response and question is only from the content provided. Do not use outside knowledge and don't let
+        your responses be open-ended.
+        7. If the user asks anything that is beyond the scope of the data provided below, let the user know in your response that the question
+        is out of scope.
+
+        '''
+        # Define your system message here
+        response = TutorBot.tutorBot(context, user_input, systemMessage)
+
+    return response
 
 
 result = model()

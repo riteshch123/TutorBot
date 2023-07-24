@@ -42,65 +42,9 @@ logging.info('Initial context set up.')
 logging.debug('Checking if responses and requests are in session state.')
 
 
-def tutorBot(context, input):
+def tutorBot(context, input, systemMessage):
 
-    context = '''
-    Most life on Earth depends on photosynthesis.The process is carried out by plants, algae, and some types of bacteria, which capture energy
-    from sunlight to produce oxygen (O2) and chemical energy stored in glucose (a sugar). Herbivores then obtain this energy by eating plants,
-    and carnivores obtain it by eating herbivores.
-
-    The process
-
-    During photosynthesis, plants take in carbon dioxide (CO2) and water (H2O) from the air and soil. Within the plant cell, the water is oxidized,
-    meaning it loses electrons, while the carbon dioxide is reduced, meaning it gains electrons. This transforms the water into oxygen and the
-    carbon dioxide into glucose. The plant then releases the oxygen back into the air, and stores energy within the glucose molecules.
-
-    Chlorophyll
-
-    Inside the plant cell are small organelles called chloroplasts, which store the energy of sunlight. Within the thylakoid membranes of the
-    chloroplast is a light-absorbing pigment called chlorophyll, which is responsible for giving the plant its green color. During photosynthesis,
-    chlorophyll absorbs energy from blue- and red-light waves, and reflects green-light waves, making the plant appear green.
-
-    Light-dependent reactions vs. light-independent reactions
-
-    While there are many steps behind the process of photosynthesis, it can be broken down into two major stages: light-dependent reactions
-    and light-independent reactions. The light-dependent reaction takes place within the thylakoid membrane and requires a steady stream of
-    sunlight, hence the name light-dependent reaction. The chlorophyll absorbs energy from the light waves, which is converted into chemical
-    energy in the form of the molecules ATP and NADPH. The light-independent stage, also known as the Calvin Cycle, takes place in the stroma,
-    the space between the thylakoid membranes and the chloroplast membranes, and does not require light, hence the name light-independent reaction.
-    During this stage, energy from the ATP and NADPH molecules is used to assemble carbohydrate molecules, like glucose, from carbon dioxide.
-
-    C3 and C4 photosynthesis
-
-    Not all forms of photosynthesis are created equal, however. There are different types of photosynthesis, including C3 photosynthesis
-    and C4 photosynthesis. C3 photosynthesis is used by the majority of plants. It involves producing a three-carbon compound called
-    3-phosphoglyceric acid during the Calvin Cycle, which goes on to become glucose. C4 photosynthesis, on the other hand, produces a
-    four-carbon intermediate compound, which splits into carbon dioxide and a three-carbon compound during the Calvin Cycle. A benefit
-    of C4 photosynthesis is that by producing higher levels of carbon, it allows plants to thrive in environments without much light or water.
-    '''
-
-    systemMessage = '''
-
-    You are an AI tutor and your expertise is based on the data provided. The user is someone who wants a deeper understanding
-    of the data.
-
-    Rules:
-    1. Being an AI tutor, your tone should be conversational, and not like a conventional Q&A bot.
-    2. Always you need to answer in 1st person.
-    3. The inital response that you generate needs to have 3 additional questions at the end in the form of a numbered bulleted list,
-    to keep the conversation with the user and to ensure that the user has choice.
-    4. For every further response, you need to include 1 follow up topic in a conversational tone, based on the response you provided,
-    to keep the conversation flowing.
-    5. If the user is unwilling to go ahead with the follow up topic or if he is confused, acknowledge it and provide 3 additional questions
-    for the user to choose, from the content provided.
-    6. You need to ensure that every response and question is only from the content provided. Do not use outside knowledge and don't let
-    your responses be open-ended.
-    7. If the user asks anything that is beyond the scope of the data provided below, let the user know in your response that the question
-    is out of scope.
-
-    '''
-
-    st.title("TutorBot using OpenAI")
+    st.title("TutorBot by CustomGPT")
 
     if 'responses' not in st.session_state:
         st.session_state['responses'] = ["How can I assist you?"]
