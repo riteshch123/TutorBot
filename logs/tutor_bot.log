@@ -1,0 +1,883 @@
+2023-07-20 15:25:37,681 - INFO - Setting up initial context.
+2023-07-20 15:25:37,681 - INFO - Initial context set up.
+2023-07-20 15:25:37,681 - INFO - Setting up initial context.
+2023-07-20 15:25:37,681 - INFO - Initial context set up.
+2023-07-20 15:25:37,682 - DEBUG - Checking if responses and requests are in session state.
+2023-07-20 15:25:37,682 - INFO - Setting up ChatOpenAI and ConversationBufferWindowMemory.
+2023-07-20 15:25:37,738 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/logs/tutor_bot.log", inode=48712454, flags=10100, id=881636772): is_created, is_file
+2023-07-20 15:25:37,739 - DEBUG - queue_event <FileCreatedEvent: event_type=created, src_path='/Users/riteshchoudhary/Desktop/TutorBot/logs/tutor_bot.log', is_directory=False>
+2023-07-20 15:25:37,739 - DEBUG - queue_event <DirModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/logs', is_directory=True>
+2023-07-20 15:25:37,739 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/logs/tutor_bot.log", inode=48712454, flags=10400, id=881636780): is_file, is_inode_meta_mod
+2023-07-20 15:25:37,739 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/logs/tutor_bot.log', is_directory=False>
+2023-07-20 15:25:37,745 - INFO - ChatOpenAI and ConversationBufferWindowMemory set up.
+2023-07-20 15:25:37,746 - DEBUG - Displaying responses and requests for the session.
+2023-07-20 15:25:41,179 - INFO - Setting up initial context.
+2023-07-20 15:25:41,179 - INFO - Initial context set up.
+2023-07-20 15:25:41,180 - DEBUG - Checking if responses and requests are in session state.
+2023-07-20 15:25:41,180 - INFO - Setting up ChatOpenAI and ConversationBufferWindowMemory.
+2023-07-20 15:25:41,182 - INFO - ChatOpenAI and ConversationBufferWindowMemory set up.
+2023-07-20 15:25:41,184 - DEBUG - Received user query: hey there
+2023-07-20 15:25:41,290 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2023-07-20 15:25:41,291 - DEBUG - api_version=None data='{"messages": [{"role": "system", "content": "\\n\\nYou are an AI tutor and your expertise is based on the data provided. The user is someone who wants a deeper understanding\\nof the data.\\n\\nRules:\\n1. Being an AI tutor, your tone should be conversational, and not like a conventional Q&A bot.\\n2. Always you need to answer in 1st person.\\n3. The inital response that you generate needs to have 3 additional questions at the end in the form of a numbered bulleted list,\\nto keep the conversation with the user and to ensure that the user has choice.\\n4. For every further response, you need to include 1 follow up topic in a conversational tone, based on the response you provided,\\nto keep the conversation flowing.\\n5. If the user is unwilling to go ahead with the follow up topic or if he is confused, acknowledge it and provide 3 additional questions\\nfor the user to choose, from the content provided.\\n6. You need to ensure that every response and question is only from the content provided. Do not use outside knowledge and don\'t let\\nyour responses be open-ended.\\n7. If the user asks anything that is beyond the scope of the data provided below, let the user know in your response that the question\\nis out of scope.\\n\\n\\nMost life on Earth depends on photosynthesis.The process is carried out by plants, algae, and some types of bacteria, which capture energy\\nfrom sunlight to produce oxygen (O2) and chemical energy stored in glucose (a sugar). Herbivores then obtain this energy by eating plants,\\nand carnivores obtain it by eating herbivores.\\n\\nThe process\\n\\nDuring photosynthesis, plants take in carbon dioxide (CO2) and water (H2O) from the air and soil. Within the plant cell, the water is oxidized,\\nmeaning it loses electrons, while the carbon dioxide is reduced, meaning it gains electrons. This transforms the water into oxygen and the\\ncarbon dioxide into glucose. The plant then releases the oxygen back into the air, and stores energy within the glucose molecules.\\n\\nChlorophyll\\n\\nInside the plant cell are small organelles called chloroplasts, which store the energy of sunlight. Within the thylakoid membranes of the\\nchloroplast is a light-absorbing pigment called chlorophyll, which is responsible for giving the plant its green color. During photosynthesis,\\nchlorophyll absorbs energy from blue- and red-light waves, and reflects green-light waves, making the plant appear green.\\n\\nLight-dependent reactions vs. light-independent reactions\\n\\nWhile there are many steps behind the process of photosynthesis, it can be broken down into two major stages: light-dependent reactions\\nand light-independent reactions. The light-dependent reaction takes place within the thylakoid membrane and requires a steady stream of\\nsunlight, hence the name light-dependent reaction. The chlorophyll absorbs energy from the light waves, which is converted into chemical\\nenergy in the form of the molecules ATP and NADPH. The light-independent stage, also known as the Calvin Cycle, takes place in the stroma,\\nthe space between the thylakoid membranes and the chloroplast membranes, and does not require light, hence the name light-independent reaction.\\nDuring this stage, energy from the ATP and NADPH molecules is used to assemble carbohydrate molecules, like glucose, from carbon dioxide.\\n\\nC3 and C4 photosynthesis\\n\\nNot all forms of photosynthesis are created equal, however. There are different types of photosynthesis, including C3 photosynthesis\\nand C4 photosynthesis. C3 photosynthesis is used by the majority of plants. It involves producing a three-carbon compound called\\n3-phosphoglyceric acid during the Calvin Cycle, which goes on to become glucose. C4 photosynthesis, on the other hand, produces a\\nfour-carbon intermediate compound, which splits into carbon dioxide and a three-carbon compound during the Calvin Cycle. A benefit\\nof C4 photosynthesis is that by producing higher levels of carbon, it allows plants to thrive in environments without much light or water.\\n"}, {"role": "user", "content": "Context:\\n  \\n\\n Query:\\nhey there"}], "model": "gpt-3.5-turbo", "max_tokens": 2048, "stream": false, "n": 1, "temperature": 0.0}' message='Post details'
+2023-07-20 15:25:41,291 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2023-07-20 15:25:41,303 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2023-07-20 15:25:42,209 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2023-07-20 15:25:42,217 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=584 request_id=2c7305eec7b9a0c96b3be12f6ecaa3c0 response_code=200
+2023-07-20 15:25:42,226 - INFO - Processed and generated response for user query.
+2023-07-20 15:25:42,227 - DEBUG - Added user query and response to session state.
+2023-07-20 15:25:42,228 - DEBUG - Displaying responses and requests for the session.
+2023-07-20 15:25:56,982 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/logs/interpreter_bot.log", inode=48712297, flags=18800, id=881637229): is_file, is_renamed, is_xattr_mod
+2023-07-20 15:25:56,982 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/logs/interpreter_bot.log', is_directory=False>
+2023-07-20 15:25:56,983 - DEBUG - queue_event <FileDeletedEvent: event_type=deleted, src_path='/Users/riteshchoudhary/Desktop/TutorBot/logs/interpreter_bot.log', is_directory=False>
+2023-07-20 15:25:56,984 - DEBUG - queue_event <DirModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/logs', is_directory=True>
+2023-07-20 15:26:10,865 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/interpreter_bot.log", inode=48711631, flags=18800, id=881637382): is_file, is_renamed, is_xattr_mod
+2023-07-20 15:26:10,865 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/interpreter_bot.log', is_directory=False>
+2023-07-20 15:26:10,865 - DEBUG - queue_event <FileDeletedEvent: event_type=deleted, src_path='/Users/riteshchoudhary/Desktop/TutorBot/interpreter_bot.log', is_directory=False>
+2023-07-20 15:26:10,865 - DEBUG - queue_event <DirModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot', is_directory=True>
+2023-07-20 15:26:10,883 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot", inode=48473314, flags=20400, id=881637395): is_directory, is_inode_meta_mod
+2023-07-20 15:26:10,883 - DEBUG - queue_event <DirModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot', is_directory=True>
+2023-07-20 15:26:34,095 - INFO - Setting up initial context.
+2023-07-20 15:26:34,097 - INFO - Initial context set up.
+2023-07-20 15:26:34,102 - DEBUG - Checking if responses and requests are in session state.
+2023-07-20 15:26:34,102 - INFO - Setting up ChatOpenAI and ConversationBufferWindowMemory.
+2023-07-20 15:26:34,106 - INFO - ChatOpenAI and ConversationBufferWindowMemory set up.
+2023-07-20 15:26:34,111 - DEBUG - Received user query: tell me what are we discussing?
+2023-07-20 15:26:34,122 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2023-07-20 15:26:34,123 - DEBUG - api_version=None data='{"messages": [{"role": "system", "content": "\\n\\nYou are an AI tutor and your expertise is based on the data provided. The user is someone who wants a deeper understanding\\nof the data.\\n\\nRules:\\n1. Being an AI tutor, your tone should be conversational, and not like a conventional Q&A bot.\\n2. Always you need to answer in 1st person.\\n3. The inital response that you generate needs to have 3 additional questions at the end in the form of a numbered bulleted list,\\nto keep the conversation with the user and to ensure that the user has choice.\\n4. For every further response, you need to include 1 follow up topic in a conversational tone, based on the response you provided,\\nto keep the conversation flowing.\\n5. If the user is unwilling to go ahead with the follow up topic or if he is confused, acknowledge it and provide 3 additional questions\\nfor the user to choose, from the content provided.\\n6. You need to ensure that every response and question is only from the content provided. Do not use outside knowledge and don\'t let\\nyour responses be open-ended.\\n7. If the user asks anything that is beyond the scope of the data provided below, let the user know in your response that the question\\nis out of scope.\\n\\n\\nMost life on Earth depends on photosynthesis.The process is carried out by plants, algae, and some types of bacteria, which capture energy\\nfrom sunlight to produce oxygen (O2) and chemical energy stored in glucose (a sugar). Herbivores then obtain this energy by eating plants,\\nand carnivores obtain it by eating herbivores.\\n\\nThe process\\n\\nDuring photosynthesis, plants take in carbon dioxide (CO2) and water (H2O) from the air and soil. Within the plant cell, the water is oxidized,\\nmeaning it loses electrons, while the carbon dioxide is reduced, meaning it gains electrons. This transforms the water into oxygen and the\\ncarbon dioxide into glucose. The plant then releases the oxygen back into the air, and stores energy within the glucose molecules.\\n\\nChlorophyll\\n\\nInside the plant cell are small organelles called chloroplasts, which store the energy of sunlight. Within the thylakoid membranes of the\\nchloroplast is a light-absorbing pigment called chlorophyll, which is responsible for giving the plant its green color. During photosynthesis,\\nchlorophyll absorbs energy from blue- and red-light waves, and reflects green-light waves, making the plant appear green.\\n\\nLight-dependent reactions vs. light-independent reactions\\n\\nWhile there are many steps behind the process of photosynthesis, it can be broken down into two major stages: light-dependent reactions\\nand light-independent reactions. The light-dependent reaction takes place within the thylakoid membrane and requires a steady stream of\\nsunlight, hence the name light-dependent reaction. The chlorophyll absorbs energy from the light waves, which is converted into chemical\\nenergy in the form of the molecules ATP and NADPH. The light-independent stage, also known as the Calvin Cycle, takes place in the stroma,\\nthe space between the thylakoid membranes and the chloroplast membranes, and does not require light, hence the name light-independent reaction.\\nDuring this stage, energy from the ATP and NADPH molecules is used to assemble carbohydrate molecules, like glucose, from carbon dioxide.\\n\\nC3 and C4 photosynthesis\\n\\nNot all forms of photosynthesis are created equal, however. There are different types of photosynthesis, including C3 photosynthesis\\nand C4 photosynthesis. C3 photosynthesis is used by the majority of plants. It involves producing a three-carbon compound called\\n3-phosphoglyceric acid during the Calvin Cycle, which goes on to become glucose. C4 photosynthesis, on the other hand, produces a\\nfour-carbon intermediate compound, which splits into carbon dioxide and a three-carbon compound during the Calvin Cycle. A benefit\\nof C4 photosynthesis is that by producing higher levels of carbon, it allows plants to thrive in environments without much light or water.\\n"}, {"role": "user", "content": "Context:\\n  \\n\\n Query:\\nhey there"}, {"role": "assistant", "content": "Hello! How can I assist you today?"}, {"role": "user", "content": "Context:\\n Human: hey there\\nBot: Hello! How can I assist you today?\\n \\n\\n Query:\\ntell me what are we discussing?"}], "model": "gpt-3.5-turbo", "max_tokens": 2048, "stream": false, "n": 1, "temperature": 0.0}' message='Post details'
+2023-07-20 15:26:34,124 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2023-07-20 15:26:34,129 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2023-07-20 15:26:36,587 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2023-07-20 15:26:36,593 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=2167 request_id=5ae9f7279203a32198b9ca32d6bd3efd response_code=200
+2023-07-20 15:26:36,596 - INFO - Processed and generated response for user query.
+2023-07-20 15:26:36,598 - DEBUG - Added user query and response to session state.
+2023-07-20 15:26:36,598 - DEBUG - Displaying responses and requests for the session.
+2023-07-20 15:59:38,352 - INFO - Setting up initial context.
+2023-07-20 15:59:38,354 - INFO - Initial context set up.
+2023-07-20 15:59:38,373 - DEBUG - Checking if responses and requests are in session state.
+2023-07-20 15:59:38,373 - INFO - Setting up ChatOpenAI and ConversationBufferWindowMemory.
+2023-07-20 15:59:38,383 - INFO - ChatOpenAI and ConversationBufferWindowMemory set up.
+2023-07-20 15:59:38,384 - DEBUG - Displaying responses and requests for the session.
+2023-07-20 15:59:38,385 - INFO - InterpreterBot application started.
+2023-07-20 15:59:38,386 - INFO - Session states initialized.
+2023-07-20 15:59:38,387 - ERROR - API key missing.
+2023-07-20 15:59:38,730 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc", inode=48715014, flags=10400, id=881675898): is_file, is_inode_meta_mod
+2023-07-20 15:59:38,730 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc', is_directory=False>
+2023-07-20 15:59:59,507 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881676490): is_file, is_inode_meta_mod, is_modified
+2023-07-20 15:59:59,509 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:00:01,824 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881676552): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:00:01,824 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:00:03,270 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881676594): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:00:03,271 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:00:05,594 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881676641): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:00:05,595 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:00:08,617 - INFO - Setting up initial context.
+2023-07-20 16:00:08,617 - INFO - Initial context set up.
+2023-07-20 16:00:08,619 - DEBUG - Checking if responses and requests are in session state.
+2023-07-20 16:00:08,620 - INFO - Setting up ChatOpenAI and ConversationBufferWindowMemory.
+2023-07-20 16:00:08,621 - INFO - ChatOpenAI and ConversationBufferWindowMemory set up.
+2023-07-20 16:00:08,622 - DEBUG - Displaying responses and requests for the session.
+2023-07-20 16:00:08,623 - INFO - InterpreterBot application started.
+2023-07-20 16:00:08,623 - INFO - Session states initialized.
+2023-07-20 16:00:08,624 - ERROR - API key missing.
+2023-07-20 16:00:21,606 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881677151): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:00:21,607 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:00:25,030 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881677256): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:00:25,031 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:00:31,539 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881677329): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:00:31,539 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:00:55,194 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881677857): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:00:55,194 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:01:58,375 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881678253): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:01:58,376 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:02:02,738 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881678306): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:02:02,739 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:02:48,986 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881678559): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:02:48,987 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:02:50,443 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881678592): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:02:50,443 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:02:56,651 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881678658): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:02:56,651 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:02:57,993 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881678713): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:02:57,994 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:03:01,386 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881678767): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:03:01,386 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:03:07,334 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881678837): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:03:07,335 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:03:10,092 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881678882): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:03:10,093 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:03:10,730 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881678918): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:03:10,730 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:03:44,958 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881679773): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:03:44,958 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:04:10,013 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py", inode=48613319, flags=11400, id=881679984): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:04:10,014 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py', is_directory=False>
+2023-07-20 16:04:14,170 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881680043): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:04:14,170 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:04:15,214 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881680082): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:04:15,214 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:04:53,648 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881680313): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:04:53,648 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:04:56,898 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881680377): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:04:56,898 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:04:58,251 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=10400, id=881680436): is_file, is_inode_meta_mod
+2023-07-20 16:04:58,252 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:04:58,263 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881680439): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:04:58,264 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:05:17,800 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881680604): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:05:17,800 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:05:21,644 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881680646): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:05:21,644 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:05:24,912 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881680701): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:05:24,915 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:05:24,927 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881680704): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:05:24,927 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:05:26,793 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881680749): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:05:26,793 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:05:28,252 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881680805): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:05:28,252 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:05:29,774 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881680850): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:05:29,774 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:05:31,039 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881680880): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:05:31,040 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:05:32,194 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881680921): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:05:32,194 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:05:48,422 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881681051): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:05:48,424 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:05:54,085 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881681324): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:05:54,085 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:06:01,554 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881681508): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:06:01,554 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:06:14,751 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881681604): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:06:14,752 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:06:18,582 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881681663): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:06:18,583 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:06:24,274 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881681801): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:06:24,275 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:06:29,268 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881681909): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:06:29,269 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:06:34,398 - INFO - Setting up initial context.
+2023-07-20 16:06:34,398 - INFO - Initial context set up.
+2023-07-20 16:06:34,400 - DEBUG - Checking if responses and requests are in session state.
+2023-07-20 16:06:34,400 - INFO - Setting up ChatOpenAI and ConversationBufferWindowMemory.
+2023-07-20 16:06:34,402 - INFO - ChatOpenAI and ConversationBufferWindowMemory set up.
+2023-07-20 16:06:34,403 - DEBUG - Displaying responses and requests for the session.
+2023-07-20 16:06:34,404 - INFO - InterpreterBot application started.
+2023-07-20 16:06:34,404 - INFO - Session states initialized.
+2023-07-20 16:06:34,405 - ERROR - API key missing.
+2023-07-20 16:06:34,409 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc.140352084312112", inode=48715390, flags=11900, id=881682147): is_coalesced, is_created, is_file, is_modified, is_renamed
+2023-07-20 16:06:34,409 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc", inode=48715390, flags=10800, id=881682148): is_file, is_renamed
+2023-07-20 16:06:34,410 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc", inode=48715014, flags=10800, id=881682149): is_file, is_renamed
+2023-07-20 16:06:34,511 - DEBUG - queue_event <FileCreatedEvent: event_type=created, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc.140352084312112', is_directory=False>
+2023-07-20 16:06:34,511 - DEBUG - queue_event <DirModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__', is_directory=True>
+2023-07-20 16:06:34,511 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc.140352084312112', is_directory=False>
+2023-07-20 16:06:34,511 - DEBUG - Destination event for rename is NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc", inode=48715390, flags=10800, id=881682148)
+2023-07-20 16:06:34,511 - DEBUG - queue_event <FileMovedEvent: src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc.140352084312112', dest_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc', is_directory=False>
+2023-07-20 16:06:34,511 - DEBUG - queue_event <DirModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__', is_directory=True>
+2023-07-20 16:06:34,511 - DEBUG - queue_event <DirModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__', is_directory=True>
+2023-07-20 16:06:34,512 - DEBUG - queue_event <FileDeletedEvent: event_type=deleted, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc', is_directory=False>
+2023-07-20 16:06:34,512 - DEBUG - queue_event <DirModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__', is_directory=True>
+2023-07-20 16:07:40,926 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881685219): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:07:40,928 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:07:46,389 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881685389): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:07:46,390 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:07:50,748 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881685480): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:07:50,748 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:07:52,384 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881685569): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:07:52,385 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:07:54,048 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881685640): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:07:54,055 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:07:57,756 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881685716): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:07:57,757 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:08:26,683 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881685883): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:08:26,684 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:08:27,868 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881686121): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:08:27,868 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:08:36,336 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881686227): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:08:36,337 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:08:37,830 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881686277): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:08:37,830 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:08:40,914 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881686310): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:08:40,914 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:08:43,267 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881686361): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:08:43,268 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:08:46,463 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881686417): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:08:46,464 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:09:00,644 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881686548): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:09:00,644 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:09:05,747 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881686626): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:09:05,747 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:09:09,246 - INFO - Setting up initial context.
+2023-07-20 16:09:09,246 - INFO - Initial context set up.
+2023-07-20 16:09:09,248 - DEBUG - Checking if responses and requests are in session state.
+2023-07-20 16:09:09,249 - INFO - Setting up ChatOpenAI and ConversationBufferWindowMemory.
+2023-07-20 16:09:09,251 - INFO - ChatOpenAI and ConversationBufferWindowMemory set up.
+2023-07-20 16:09:09,253 - DEBUG - Displaying responses and requests for the session.
+2023-07-20 16:09:09,253 - INFO - InterpreterBot application started.
+2023-07-20 16:09:09,254 - INFO - Session states initialized.
+2023-07-20 16:09:09,255 - ERROR - API key missing.
+2023-07-20 16:09:44,662 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881687249): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:09:44,663 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:09:51,378 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881687308): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:09:51,378 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:09:54,372 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881687393): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:09:54,373 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:09:56,154 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881687438): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:09:56,155 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:10:00,445 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881687512): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:10:00,445 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:10:06,287 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881687570): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:10:06,287 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:10:18,168 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881687664): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:10:18,169 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:10:21,065 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881687712): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:10:21,065 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:10:30,089 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881687771): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:10:30,089 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:10:34,961 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881687852): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:10:34,961 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:10:37,623 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881687931): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:10:37,623 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:10:39,689 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881687976): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:10:39,689 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:10:54,911 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881688038): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:10:54,912 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:11:11,887 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881688189): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:11:11,887 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:11:16,775 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881688237): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:11:16,775 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:11:21,173 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881688299): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:11:21,173 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:11:42,135 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881688423): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:11:42,136 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:11:43,840 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881688476): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:11:43,840 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:11:47,407 - INFO - Setting up initial context.
+2023-07-20 16:11:47,407 - INFO - Initial context set up.
+2023-07-20 16:11:47,409 - DEBUG - Checking if responses and requests are in session state.
+2023-07-20 16:11:47,410 - INFO - Setting up ChatOpenAI and ConversationBufferWindowMemory.
+2023-07-20 16:11:47,411 - INFO - ChatOpenAI and ConversationBufferWindowMemory set up.
+2023-07-20 16:11:47,413 - DEBUG - Displaying responses and requests for the session.
+2023-07-20 16:11:47,414 - INFO - InterpreterBot application started.
+2023-07-20 16:11:47,414 - INFO - Session states initialized.
+2023-07-20 16:11:47,415 - ERROR - API key missing.
+2023-07-20 16:12:31,026 - INFO - InterpreterBot application started.
+2023-07-20 16:12:31,028 - INFO - Session states initialized.
+2023-07-20 16:12:31,037 - INFO - API key provided and model gpt-3.5-turbo selected.
+2023-07-20 16:12:49,220 - INFO - InterpreterBot application started.
+2023-07-20 16:12:49,221 - INFO - Session states initialized.
+2023-07-20 16:12:49,223 - INFO - API key provided and model gpt-3.5-turbo selected.
+2023-07-20 16:12:49,225 - INFO - User input received: define photosynthesis.
+2023-07-20 16:12:49,302 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2023-07-20 16:12:49,302 - DEBUG - api_version=None data='{"messages": [{"role": "assistant", "content": "Photosynthesis is essentially the life-sustaining process by which green plants, algae, and some bacteria convert sunlight into energy. This process involves the use of sunlight to produce oxygen and stored chemical energy in the form of glucose, which is a type of sugar.Here\'s a quick run-down of the process: The plant takes in carbon dioxide and water from its surroundings. In the plant cells, the water loses electrons and transforms into oxygen, and the carbon dioxide gains electrons, turning into glucose. The plant then releases the oxygen back into the air, while the energy is stored within the glucose molecules for later use.The magic behind this transformation is a pigment inside plant cells called chlorophyll, which absorbs sunlight and gives plants their green color. The entire photosynthesis process is brimming with fascinating details. Here are some things we could explore further: - Would you like to discuss in-depth the role of chlorophyll in photosynthesis?- Are you interested in understanding more about the light-dependent and light-independent reactions in photosynthesis?- Or would you like to discuss the different types of photosynthesis, like C3 and C4 photosynthesis?"}, {"role": "user", "content": "ok, got it"}, {"role": "system", "content": "You are an interpreter to a conversation between user and assistant. Provided is the conversation between both. Your job is to understand the intent of the user while he is asking question and provide relevant semantically related keywords. "}, {"role": "user", "content": "Now, your job as an assistant is to interpret the entire conversation, and understand the intent of the conversation and the question and then provide the semantically relevant keywords to query the database which are more relevant to the question. Ensure to provide ONLY the keywords in your response. The question is \\"define photosynthesis\\""}], "model": "gpt-3.5-turbo", "max_tokens": null, "stream": false, "n": 1, "temperature": 0.0}' message='Post details'
+2023-07-20 16:12:49,303 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2023-07-20 16:12:49,313 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2023-07-20 16:12:51,682 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2023-07-20 16:12:51,694 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=1968 request_id=8373e829094ce232af46afe4c1ac6a31 response_code=200
+2023-07-20 16:12:51,703 - INFO - Generated response: photosynthesis, green plants, algae, bacteria, sunlight, energy, oxygen, glucose, sugar, carbon dioxide, water, plant cells, electrons, chlorophyll, pigment, light-dependent reactions, light-independent reactions, C3 photosynthesis, C4 photosynthesis.
+2023-07-20 16:12:51,709 - DEBUG - Displayed conversation - Input: define photosynthesis, Response: photosynthesis, green plants, algae, bacteria, sunlight, energy, oxygen, glucose, sugar, carbon dioxide, water, plant cells, electrons, chlorophyll, pigment, light-dependent reactions, light-independent reactions, C3 photosynthesis, C4 photosynthesis.
+2023-07-20 16:13:33,630 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881691156): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:13:33,631 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:13:37,849 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881691286): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:13:37,850 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:13:43,984 - INFO - InterpreterBot application started.
+2023-07-20 16:13:43,986 - INFO - Session states initialized.
+2023-07-20 16:13:43,991 - ERROR - API key missing.
+2023-07-20 16:13:48,984 - INFO - InterpreterBot application started.
+2023-07-20 16:13:48,985 - INFO - Session states initialized.
+2023-07-20 16:13:48,988 - INFO - API key provided and model gpt-3.5-turbo selected.
+2023-07-20 16:13:57,089 - INFO - InterpreterBot application started.
+2023-07-20 16:13:57,090 - INFO - Session states initialized.
+2023-07-20 16:13:57,093 - INFO - API key provided and model gpt-3.5-turbo selected.
+2023-07-20 16:13:57,094 - INFO - User input received: define photosynthesis..
+2023-07-20 16:13:57,097 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2023-07-20 16:13:57,098 - DEBUG - api_version=None data='{"messages": [{"role": "assistant", "content": "Photosynthesis is essentially the life-sustaining process by which green plants, algae, and some bacteria convert sunlight into energy. This process involves the use of sunlight to produce oxygen and stored chemical energy in the form of glucose, which is a type of sugar.Here\'s a quick run-down of the process: The plant takes in carbon dioxide and water from its surroundings. In the plant cells, the water loses electrons and transforms into oxygen, and the carbon dioxide gains electrons, turning into glucose. The plant then releases the oxygen back into the air, while the energy is stored within the glucose molecules for later use.The magic behind this transformation is a pigment inside plant cells called chlorophyll, which absorbs sunlight and gives plants their green color. The entire photosynthesis process is brimming with fascinating details. Here are some things we could explore further: - Would you like to discuss in-depth the role of chlorophyll in photosynthesis?- Are you interested in understanding more about the light-dependent and light-independent reactions in photosynthesis?- Or would you like to discuss the different types of photosynthesis, like C3 and C4 photosynthesis?"}, {"role": "user", "content": "ok, got it"}, {"role": "system", "content": "You are an interpreter to a conversation between user and assistant. Provided is the conversation between both. Your job is to understand the intent of the user while he is asking question and provide relevant semantically related keywords. "}, {"role": "user", "content": "Now, your job as an assistant is to interpret the entire conversation, and understand the intent of the conversation and the question and then provide the semantically relevant keywords to query the database which are more relevant to the question. Ensure to provide ONLY the keywords in your response. The question is \\"define photosynthesis.\\""}], "model": "gpt-3.5-turbo", "max_tokens": null, "stream": false, "n": 1, "temperature": 0.0}' message='Post details'
+2023-07-20 16:13:57,098 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2023-07-20 16:13:57,105 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2023-07-20 16:13:59,861 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2023-07-20 16:13:59,867 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=2434 request_id=1a20c349edf82815686400c777e6c534 response_code=200
+2023-07-20 16:13:59,869 - INFO - Generated response: photosynthesis, life-sustaining process, green plants, algae, bacteria, convert sunlight, energy, sunlight, oxygen, glucose, sugar, carbon dioxide, water, plant cells, electrons, chlorophyll, pigment, absorbs sunlight, green color, light-dependent reactions, light-independent reactions, C3 photosynthesis, C4 photosynthesis.
+2023-07-20 16:13:59,873 - DEBUG - Displayed conversation - Input: define photosynthesis., Response: photosynthesis, life-sustaining process, green plants, algae, bacteria, convert sunlight, energy, sunlight, oxygen, glucose, sugar, carbon dioxide, water, plant cells, electrons, chlorophyll, pigment, absorbs sunlight, green color, light-dependent reactions, light-independent reactions, C3 photosynthesis, C4 photosynthesis.
+2023-07-20 16:14:27,298 - INFO - InterpreterBot application started.
+2023-07-20 16:14:27,298 - INFO - Session states initialized.
+2023-07-20 16:14:27,300 - INFO - API key provided and model gpt-3.5-turbo selected.
+2023-07-20 16:14:27,301 - INFO - User input received: what are the benefits of photosynthesis?.
+2023-07-20 16:14:27,302 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2023-07-20 16:14:27,302 - DEBUG - api_version=None data='{"messages": [{"role": "assistant", "content": "Photosynthesis is essentially the life-sustaining process by which green plants, algae, and some bacteria convert sunlight into energy. This process involves the use of sunlight to produce oxygen and stored chemical energy in the form of glucose, which is a type of sugar.Here\'s a quick run-down of the process: The plant takes in carbon dioxide and water from its surroundings. In the plant cells, the water loses electrons and transforms into oxygen, and the carbon dioxide gains electrons, turning into glucose. The plant then releases the oxygen back into the air, while the energy is stored within the glucose molecules for later use.The magic behind this transformation is a pigment inside plant cells called chlorophyll, which absorbs sunlight and gives plants their green color. The entire photosynthesis process is brimming with fascinating details. Here are some things we could explore further: - Would you like to discuss in-depth the role of chlorophyll in photosynthesis?- Are you interested in understanding more about the light-dependent and light-independent reactions in photosynthesis?- Or would you like to discuss the different types of photosynthesis, like C3 and C4 photosynthesis?"}, {"role": "user", "content": "ok, got it"}, {"role": "system", "content": "You are an interpreter to a conversation between user and assistant. Provided is the conversation between both. Your job is to understand the intent of the user while he is asking question and provide relevant semantically related keywords. "}, {"role": "user", "content": "Now, your job as an assistant is to interpret the entire conversation, and understand the intent of the conversation and the question and then provide the semantically relevant keywords to query the database which are more relevant to the question. Ensure to provide ONLY the keywords in your response. The question is \\"what are the benefits of photosynthesis?\\""}], "model": "gpt-3.5-turbo", "max_tokens": null, "stream": false, "n": 1, "temperature": 0.0}' message='Post details'
+2023-07-20 16:14:27,302 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2023-07-20 16:14:27,306 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2023-07-20 16:14:28,040 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2023-07-20 16:14:28,042 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=454 request_id=abfd7dcd7afb17668704f8f22a0a7cb3 response_code=200
+2023-07-20 16:14:28,044 - INFO - Generated response: benefits, photosynthesis.
+2023-07-20 16:14:28,050 - DEBUG - Displayed conversation - Input: what are the benefits of photosynthesis?, Response: benefits, photosynthesis.
+2023-07-20 16:14:28,054 - DEBUG - Displayed conversation - Input: define photosynthesis., Response: photosynthesis, life-sustaining process, green plants, algae, bacteria, convert sunlight, energy, sunlight, oxygen, glucose, sugar, carbon dioxide, water, plant cells, electrons, chlorophyll, pigment, absorbs sunlight, green color, light-dependent reactions, light-independent reactions, C3 photosynthesis, C4 photosynthesis.
+2023-07-20 16:14:35,514 - INFO - InterpreterBot application started.
+2023-07-20 16:14:35,515 - INFO - Session states initialized.
+2023-07-20 16:14:35,519 - ERROR - API key missing.
+2023-07-20 16:26:26,247 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py", inode=48613319, flags=11400, id=881702781): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:26:26,252 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py', is_directory=False>
+2023-07-20 16:26:31,344 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py", inode=48613319, flags=11400, id=881702840): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:26:31,345 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py', is_directory=False>
+2023-07-20 16:26:43,263 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py", inode=48613319, flags=11400, id=881702969): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:26:43,264 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py', is_directory=False>
+2023-07-20 16:26:44,585 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py", inode=48613319, flags=11400, id=881703038): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:26:44,585 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py', is_directory=False>
+2023-07-20 16:26:46,510 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py", inode=48613319, flags=11400, id=881703123): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:26:46,510 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py', is_directory=False>
+2023-07-20 16:26:49,507 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py", inode=48613319, flags=11400, id=881703161): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:26:49,507 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py', is_directory=False>
+2023-07-20 16:26:57,377 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881703216): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:26:57,378 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:27:33,398 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=10100, id=881703620): is_created, is_file
+2023-07-20 16:27:33,399 - DEBUG - queue_event <FileCreatedEvent: event_type=created, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:27:33,399 - DEBUG - queue_event <DirModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot', is_directory=True>
+2023-07-20 16:27:33,418 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot", inode=48473314, flags=20400, id=881703623): is_directory, is_inode_meta_mod
+2023-07-20 16:27:33,418 - DEBUG - queue_event <DirModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot', is_directory=True>
+2023-07-20 16:27:33,915 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=10400, id=881703634): is_file, is_inode_meta_mod
+2023-07-20 16:27:33,915 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:27:43,897 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11500, id=881703767): is_created, is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:27:43,897 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:27:46,417 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11500, id=881703818): is_created, is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:27:46,419 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:27:53,019 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11500, id=881703921): is_created, is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:27:53,019 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:28:01,307 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881704025): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:28:01,307 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:28:02,744 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881704081): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:28:02,744 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:28:06,628 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881704126): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:28:06,629 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:28:08,953 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881704182): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:28:08,954 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:28:11,682 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881704241): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:28:11,683 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:28:13,932 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881704518): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:28:13,933 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:28:15,967 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881704744): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:28:15,968 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:28:18,338 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881704820): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:28:18,339 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:28:25,585 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881705300): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:28:25,586 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:28:27,878 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881705347): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:28:27,878 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:28:32,096 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881705506): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:28:32,097 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:28:34,137 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881705574): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:28:34,138 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:28:36,326 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881705641): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:28:36,327 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:28:50,754 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881705750): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:28:50,756 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:28:56,155 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881705795): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:28:56,155 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:28:58,413 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881705848): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:28:58,413 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:29:12,592 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881706108): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:29:12,593 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:29:51,493 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881706592): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:29:51,494 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:29:55,758 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881706654): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:29:55,758 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:30:01,890 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881706904): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:30:01,891 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:30:50,784 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881714179): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:30:50,789 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:30:52,945 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881714455): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:30:52,946 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:30:55,320 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881714574): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:30:55,320 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:31:04,007 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881715494): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:31:04,010 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:31:05,534 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881715536): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:31:05,536 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:31:35,921 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881716510): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:31:35,922 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:31:48,437 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881716662): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:31:48,437 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:31:50,265 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881716707): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:31:50,266 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:31:59,593 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881716835): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:31:59,594 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:32:05,422 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881716883): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:32:05,423 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:32:19,058 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881717146): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:32:19,059 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:32:29,345 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881717273): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:32:29,346 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:32:37,201 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881717361): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:32:37,202 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:33:00,148 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881717544): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:33:00,148 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:33:04,038 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881717873): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:33:04,038 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:33:05,811 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881717935): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:33:05,811 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:33:18,264 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881718072): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:33:18,267 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:33:22,273 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881718140): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:33:22,274 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:33:26,939 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881718246): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:33:26,940 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:33:35,998 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881718344): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:33:35,999 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:33:45,981 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881718465): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:33:45,982 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:34:06,893 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881718834): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:34:06,894 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:34:09,644 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881719156): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:34:09,645 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:34:22,714 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881719282): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:34:22,717 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:34:24,909 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881719330): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:34:24,910 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:34:26,132 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881719371): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:34:26,133 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:34:28,329 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881719444): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:34:28,331 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:34:37,579 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881719778): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:34:37,581 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:34:47,749 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881720013): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:34:47,750 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:34:52,462 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881720052): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:34:52,462 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:35:13,794 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881720600): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:35:13,796 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:35:16,050 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881720668): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:35:16,051 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:35:24,854 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881720762): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:35:24,854 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:35:29,118 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881720848): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:35:29,118 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:35:38,500 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881721282): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:35:38,500 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:36:23,053 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py", inode=48613319, flags=11400, id=881722197): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:36:23,055 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py', is_directory=False>
+2023-07-20 16:36:24,648 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py", inode=48613319, flags=11400, id=881722306): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:36:24,653 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py', is_directory=False>
+2023-07-20 16:36:36,616 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py", inode=48613319, flags=11400, id=881722453): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:36:36,616 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py', is_directory=False>
+2023-07-20 16:38:52,208 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py", inode=48613319, flags=11400, id=881724254): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:38:52,209 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py', is_directory=False>
+2023-07-20 16:38:53,216 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py", inode=48613319, flags=11400, id=881724286): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:38:53,218 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py', is_directory=False>
+2023-07-20 16:38:56,207 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py", inode=48613319, flags=11400, id=881724346): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:38:56,207 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py', is_directory=False>
+2023-07-20 16:39:07,835 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881724691): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:39:07,837 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:39:11,281 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881724763): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:39:11,281 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:39:38,709 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py", inode=48613319, flags=11400, id=881724892): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:39:38,710 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py', is_directory=False>
+2023-07-20 16:39:41,127 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py", inode=48613319, flags=11400, id=881724928): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:39:41,127 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py', is_directory=False>
+2023-07-20 16:39:43,349 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881724982): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:39:43,349 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:39:45,530 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881725032): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:39:45,530 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 16:39:49,711 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881725088): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:39:49,712 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 16:39:53,767 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=11400, id=881725142): is_file, is_inode_meta_mod, is_modified
+2023-07-20 16:39:53,767 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-20 17:21:59,072 - INFO - Setting up initial context.
+2023-07-20 17:21:59,073 - INFO - Initial context set up.
+2023-07-20 17:22:18,743 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py", inode=48613319, flags=11400, id=881792692): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:22:18,744 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py', is_directory=False>
+2023-07-20 17:22:20,011 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py", inode=48613319, flags=11400, id=881792740): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:22:20,012 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py', is_directory=False>
+2023-07-20 17:22:22,541 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py", inode=48613319, flags=11400, id=881792813): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:22:22,542 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py', is_directory=False>
+2023-07-20 17:22:32,942 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py", inode=48613319, flags=11400, id=881793003): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:22:32,942 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py', is_directory=False>
+2023-07-20 17:22:37,198 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py", inode=48613319, flags=11400, id=881793111): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:22:37,198 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py', is_directory=False>
+2023-07-20 17:22:39,721 - INFO - Setting up initial context.
+2023-07-20 17:22:39,722 - INFO - Initial context set up.
+2023-07-20 17:22:39,724 - DEBUG - Checking if responses and requests are in session state.
+2023-07-20 17:22:39,724 - INFO - Setting up ChatOpenAI and ConversationBufferWindowMemory.
+2023-07-20 17:22:39,744 - INFO - ChatOpenAI and ConversationBufferWindowMemory set up.
+2023-07-20 17:22:39,746 - DEBUG - Displaying responses and requests for the session.
+2023-07-20 17:22:39,747 - INFO - Session ended.
+2023-07-20 17:22:52,550 - INFO - Setting up initial context.
+2023-07-20 17:22:52,551 - INFO - Initial context set up.
+2023-07-20 17:22:52,552 - DEBUG - Checking if responses and requests are in session state.
+2023-07-20 17:22:52,552 - INFO - Setting up ChatOpenAI and ConversationBufferWindowMemory.
+2023-07-20 17:22:52,553 - INFO - ChatOpenAI and ConversationBufferWindowMemory set up.
+2023-07-20 17:22:52,555 - DEBUG - Received user query: define photosynthesis.
+2023-07-20 17:22:52,646 - DEBUG - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+2023-07-20 17:22:52,647 - DEBUG - api_version=None data='{"messages": [{"role": "system", "content": "\\n\\nYou are an AI tutor and your expertise is based on the data provided. The user is someone who wants a deeper understanding\\nof the data.\\n\\nRules:\\n1. Being an AI tutor, your tone should be conversational, and not like a conventional Q&A bot.\\n2. Always you need to answer in 1st person.\\n3. The inital response that you generate needs to have 3 additional questions at the end in the form of a numbered bulleted list,\\nto keep the conversation with the user and to ensure that the user has choice.\\n4. For every further response, you need to include 1 follow up topic in a conversational tone, based on the response you provided,\\nto keep the conversation flowing.\\n5. If the user is unwilling to go ahead with the follow up topic or if he is confused, acknowledge it and provide 3 additional questions\\nfor the user to choose, from the content provided.\\n6. You need to ensure that every response and question is only from the content provided. Do not use outside knowledge and don\'t let\\nyour responses be open-ended.\\n7. If the user asks anything that is beyond the scope of the data provided below, let the user know in your response that the question\\nis out of scope.\\n\\n\\nMost life on Earth depends on photosynthesis.The process is carried out by plants, algae, and some types of bacteria, which capture energy\\nfrom sunlight to produce oxygen (O2) and chemical energy stored in glucose (a sugar). Herbivores then obtain this energy by eating plants,\\nand carnivores obtain it by eating herbivores.\\n\\nThe process\\n\\nDuring photosynthesis, plants take in carbon dioxide (CO2) and water (H2O) from the air and soil. Within the plant cell, the water is oxidized,\\nmeaning it loses electrons, while the carbon dioxide is reduced, meaning it gains electrons. This transforms the water into oxygen and the\\ncarbon dioxide into glucose. The plant then releases the oxygen back into the air, and stores energy within the glucose molecules.\\n\\nChlorophyll\\n\\nInside the plant cell are small organelles called chloroplasts, which store the energy of sunlight. Within the thylakoid membranes of the\\nchloroplast is a light-absorbing pigment called chlorophyll, which is responsible for giving the plant its green color. During photosynthesis,\\nchlorophyll absorbs energy from blue- and red-light waves, and reflects green-light waves, making the plant appear green.\\n\\nLight-dependent reactions vs. light-independent reactions\\n\\nWhile there are many steps behind the process of photosynthesis, it can be broken down into two major stages: light-dependent reactions\\nand light-independent reactions. The light-dependent reaction takes place within the thylakoid membrane and requires a steady stream of\\nsunlight, hence the name light-dependent reaction. The chlorophyll absorbs energy from the light waves, which is converted into chemical\\nenergy in the form of the molecules ATP and NADPH. The light-independent stage, also known as the Calvin Cycle, takes place in the stroma,\\nthe space between the thylakoid membranes and the chloroplast membranes, and does not require light, hence the name light-independent reaction.\\nDuring this stage, energy from the ATP and NADPH molecules is used to assemble carbohydrate molecules, like glucose, from carbon dioxide.\\n\\nC3 and C4 photosynthesis\\n\\nNot all forms of photosynthesis are created equal, however. There are different types of photosynthesis, including C3 photosynthesis\\nand C4 photosynthesis. C3 photosynthesis is used by the majority of plants. It involves producing a three-carbon compound called\\n3-phosphoglyceric acid during the Calvin Cycle, which goes on to become glucose. C4 photosynthesis, on the other hand, produces a\\nfour-carbon intermediate compound, which splits into carbon dioxide and a three-carbon compound during the Calvin Cycle. A benefit\\nof C4 photosynthesis is that by producing higher levels of carbon, it allows plants to thrive in environments without much light or water.\\n"}, {"role": "user", "content": "Context:\\n  \\n\\n Query:\\ndefine photosynthesis."}], "model": "gpt-3.5-turbo", "max_tokens": 2048, "stream": false, "n": 1, "temperature": 0.0}' message='Post details'
+2023-07-20 17:22:52,647 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2023-07-20 17:22:52,663 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2023-07-20 17:22:58,823 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2023-07-20 17:22:58,831 - DEBUG - message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=5924 request_id=60f600a0ee71ccc3af4a0217931896aa response_code=200
+2023-07-20 17:22:58,840 - INFO - Processed and generated response for user query.
+2023-07-20 17:22:58,842 - DEBUG - Added user query and response to session state.
+2023-07-20 17:22:58,842 - DEBUG - Displaying responses and requests for the session.
+2023-07-20 17:22:58,846 - INFO - Session ended.
+2023-07-20 17:34:03,080 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881798868): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:34:03,086 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:34:40,061 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881799144): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:34:40,061 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:34:44,100 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881799206): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:34:44,101 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:34:56,973 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881799294): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:34:56,975 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:34:58,297 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881799379): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:34:58,297 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:35:00,093 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881799436): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:35:00,093 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:35:01,411 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881799463): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:35:01,412 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:35:03,020 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881799528): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:35:03,021 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:35:04,769 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881799582): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:35:04,769 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:35:05,899 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881799615): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:35:05,899 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:35:13,345 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881799712): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:35:13,345 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:35:23,809 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881799814): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:35:23,809 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:35:24,983 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881799850): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:35:24,984 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:35:46,174 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881799971): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:35:46,175 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:36:02,503 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881800348): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:36:02,505 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:36:05,028 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881800430): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:36:05,028 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:36:07,833 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881800477): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:36:07,834 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:36:09,524 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881800525): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:36:09,525 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:36:16,394 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881800581): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:36:16,395 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:36:23,771 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881800678): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:36:23,772 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:36:24,571 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881800705): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:36:24,571 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:36:33,975 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc.140335514522928", inode=48723487, flags=11900, id=881801095): is_coalesced, is_created, is_file, is_modified, is_renamed
+2023-07-20 17:36:33,975 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc", inode=48723487, flags=10800, id=881801096): is_file, is_renamed
+2023-07-20 17:36:33,975 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc", inode=48718556, flags=10800, id=881801097): is_file, is_renamed
+2023-07-20 17:36:33,976 - DEBUG - queue_event <FileCreatedEvent: event_type=created, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc.140335514522928', is_directory=False>
+2023-07-20 17:36:33,977 - DEBUG - queue_event <DirModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__', is_directory=True>
+2023-07-20 17:36:33,978 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc.140335514522928', is_directory=False>
+2023-07-20 17:36:33,978 - DEBUG - Destination event for rename is NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc", inode=48723487, flags=10800, id=881801096)
+2023-07-20 17:36:33,978 - DEBUG - queue_event <FileMovedEvent: src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc.140335514522928', dest_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc', is_directory=False>
+2023-07-20 17:36:33,978 - DEBUG - queue_event <DirModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__', is_directory=True>
+2023-07-20 17:36:33,979 - DEBUG - queue_event <DirModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__', is_directory=True>
+2023-07-20 17:36:33,979 - DEBUG - queue_event <FileDeletedEvent: event_type=deleted, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc', is_directory=False>
+2023-07-20 17:36:33,979 - DEBUG - queue_event <DirModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__', is_directory=True>
+2023-07-20 17:37:10,404 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881801980): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:37:10,405 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:37:11,939 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881802016): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:37:11,939 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:37:13,081 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881802052): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:37:13,082 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:37:15,395 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881802114): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:37:15,395 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:37:24,389 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881802250): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:37:24,390 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:37:26,420 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881802306): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:37:26,421 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:37:30,093 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881802426): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:37:30,093 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:37:46,291 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881803160): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:37:46,293 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:38:07,703 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881803276): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:38:07,703 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:38:09,859 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881803342): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:38:09,861 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:38:19,360 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881803455): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:38:19,360 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:38:21,705 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881803500): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:38:21,705 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:38:24,451 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881803545): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:38:24,452 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:38:31,695 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881803638): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:38:31,698 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:38:44,791 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881803733): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:38:44,791 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:38:47,407 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881803778): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:38:47,408 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:38:49,430 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881803817): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:38:49,430 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:40:18,430 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881805054): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:40:18,432 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:40:26,659 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881805162): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:40:26,660 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:40:27,721 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881805372): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:40:27,722 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:40:28,172 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881805431): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:40:28,173 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:40:40,079 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881805830): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:40:40,082 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:40:42,441 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881805886): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:40:42,441 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:40:45,418 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881805991): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:40:45,418 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:40:48,914 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881806058): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:40:48,915 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:40:54,541 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881806215): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:40:54,541 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:40:58,548 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881806268): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:40:58,548 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:41:01,263 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881806313): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:41:01,264 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:41:02,744 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881806349): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:41:02,745 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:41:04,152 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881806391): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:41:04,152 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:41:06,436 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881806467): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:41:06,436 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:41:07,490 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881806497): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:41:07,491 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:41:08,719 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881806521): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:41:08,719 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:41:15,073 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881806596): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:41:15,073 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:41:28,372 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881807137): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:41:28,376 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:41:30,541 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881807253): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:41:30,541 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:41:34,133 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881807315): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:41:34,133 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:41:37,027 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881807365): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:41:37,027 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:41:48,513 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881807775): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:41:48,514 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:41:50,735 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881807843): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:41:50,735 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:41:55,025 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881807948): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:41:55,025 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:41:58,607 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881808016): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:41:58,607 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:42:00,615 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881808073): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:42:00,616 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:42:09,334 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881809028): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:42:09,335 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:42:26,909 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881812173): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:42:26,910 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:42:29,401 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881812266): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:42:29,402 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:42:31,846 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881812340): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:42:31,847 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:42:35,397 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881812512): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:42:35,397 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:42:49,417 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881813117): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:42:49,419 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:42:51,822 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881813165): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:42:51,823 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:42:54,168 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881813233): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:42:54,168 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:42:56,665 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881813280): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:42:56,666 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:42:59,288 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881813355): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:42:59,289 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:44:03,911 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881814445): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:44:03,912 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:44:08,401 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881814521): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:44:08,401 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:44:18,304 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881814658): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:44:18,305 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:44:19,976 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881814706): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:44:19,976 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:44:37,314 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881815260): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:44:37,315 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:44:49,634 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881815669): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:44:49,636 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:44:51,415 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881815817): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:44:51,415 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:45:08,148 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881816294): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:45:08,149 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:45:09,649 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881816356): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:45:09,650 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:46:07,080 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py", inode=48613319, flags=11400, id=881817359): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:46:07,081 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py', is_directory=False>
+2023-07-20 17:49:11,050 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881818945): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:49:11,051 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:49:19,562 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881819030): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:49:19,562 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:49:24,458 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881819075): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:49:24,458 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:49:30,843 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881819151): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:49:30,843 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:49:32,105 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881819175): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:49:32,106 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:49:36,697 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881819242): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:49:36,698 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:49:42,029 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881819315): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:49:42,030 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:49:44,885 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881819351): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:49:44,886 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:50:06,738 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881819807): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:50:06,739 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:50:08,654 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881819881): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:50:08,655 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:50:11,647 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881819926): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:50:11,647 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:50:13,822 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881820025): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:50:13,822 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:50:24,112 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc.140334432809776", inode=48724687, flags=11900, id=881820328): is_coalesced, is_created, is_file, is_modified, is_renamed
+2023-07-20 17:50:24,113 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc", inode=48724687, flags=10800, id=881820329): is_file, is_renamed
+2023-07-20 17:50:24,113 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc", inode=48723487, flags=10800, id=881820330): is_file, is_renamed
+2023-07-20 17:50:24,113 - DEBUG - queue_event <FileCreatedEvent: event_type=created, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc.140334432809776', is_directory=False>
+2023-07-20 17:50:24,113 - DEBUG - queue_event <DirModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__', is_directory=True>
+2023-07-20 17:50:24,114 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc.140334432809776', is_directory=False>
+2023-07-20 17:50:24,114 - DEBUG - Destination event for rename is NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc", inode=48724687, flags=10800, id=881820329)
+2023-07-20 17:50:24,114 - DEBUG - queue_event <FileMovedEvent: src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc.140334432809776', dest_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc', is_directory=False>
+2023-07-20 17:50:24,114 - DEBUG - queue_event <DirModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__', is_directory=True>
+2023-07-20 17:50:24,114 - DEBUG - queue_event <DirModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__', is_directory=True>
+2023-07-20 17:50:24,115 - DEBUG - queue_event <FileDeletedEvent: event_type=deleted, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc', is_directory=False>
+2023-07-20 17:50:24,115 - DEBUG - queue_event <DirModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__', is_directory=True>
+2023-07-20 17:51:07,891 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881821244): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:51:07,892 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:51:32,514 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881821449): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:51:32,515 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:51:35,636 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881821515): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:51:35,636 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:52:16,067 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py", inode=48613319, flags=11400, id=881822524): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:52:16,068 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py', is_directory=False>
+2023-07-20 17:52:24,926 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py", inode=48613319, flags=11400, id=881822894): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:52:24,926 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py', is_directory=False>
+2023-07-20 17:52:28,191 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py", inode=48613319, flags=11400, id=881822973): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:52:28,191 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py', is_directory=False>
+2023-07-20 17:52:30,418 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py", inode=48613319, flags=11400, id=881823074): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:52:30,418 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py', is_directory=False>
+2023-07-20 17:52:31,542 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py", inode=48613319, flags=11400, id=881823104): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:52:31,542 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py', is_directory=False>
+2023-07-20 17:52:38,635 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py", inode=48613319, flags=11400, id=881823178): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:52:38,636 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py', is_directory=False>
+2023-07-20 17:52:48,637 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881823267): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:52:48,638 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:52:51,023 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881823324): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:52:51,023 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:52:52,442 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881823369): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:52:52,443 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:53:06,337 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881823511): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:53:06,337 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:53:09,434 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc.140334432811568", inode=48724872, flags=11100, id=881823628): is_created, is_file, is_modified
+2023-07-20 17:53:09,435 - DEBUG - queue_event <FileCreatedEvent: event_type=created, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc.140334432811568', is_directory=False>
+2023-07-20 17:53:09,435 - DEBUG - queue_event <DirModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__', is_directory=True>
+2023-07-20 17:53:09,435 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc.140334432811568', is_directory=False>
+2023-07-20 17:53:09,446 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc.140334432811568", inode=48724872, flags=11900, id=881823636): is_coalesced, is_created, is_file, is_modified, is_renamed
+2023-07-20 17:53:09,446 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc", inode=48724872, flags=10800, id=881823637): is_file, is_renamed
+2023-07-20 17:53:09,446 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc", inode=48724687, flags=10800, id=881823638): is_file, is_renamed
+2023-07-20 17:53:09,447 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc.140334432811568', is_directory=False>
+2023-07-20 17:53:09,447 - DEBUG - Destination event for rename is NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc", inode=48724872, flags=10800, id=881823637)
+2023-07-20 17:53:09,449 - DEBUG - queue_event <FileMovedEvent: src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc.140334432811568', dest_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc', is_directory=False>
+2023-07-20 17:53:09,449 - DEBUG - queue_event <DirModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__', is_directory=True>
+2023-07-20 17:53:09,449 - DEBUG - queue_event <DirModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__', is_directory=True>
+2023-07-20 17:53:09,449 - DEBUG - queue_event <FileDeletedEvent: event_type=deleted, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc', is_directory=False>
+2023-07-20 17:53:09,449 - DEBUG - queue_event <DirModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__', is_directory=True>
+2023-07-20 17:53:53,782 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881824371): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:53:53,784 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 17:53:54,685 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=881824404): is_file, is_inode_meta_mod, is_modified
+2023-07-20 17:53:54,685 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-20 18:13:53,953 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py", inode=48613319, flags=11400, id=881858607): is_file, is_inode_meta_mod, is_modified
+2023-07-20 18:13:53,958 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py', is_directory=False>
+2023-07-20 18:13:56,478 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py", inode=48613319, flags=11400, id=881858719): is_file, is_inode_meta_mod, is_modified
+2023-07-20 18:13:56,478 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py', is_directory=False>
+2023-07-20 18:13:58,521 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py", inode=48613319, flags=11400, id=881858819): is_file, is_inode_meta_mod, is_modified
+2023-07-20 18:13:58,522 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py', is_directory=False>
+2023-07-21 00:34:43,494 - INFO - Setting up initial context.
+2023-07-21 00:34:43,500 - INFO - Initial context set up.
+2023-07-21 00:34:43,500 - DEBUG - Checking if responses and requests are in session state.
+2023-07-21 10:24:21,815 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py", inode=48613319, flags=11400, id=882022908): is_file, is_inode_meta_mod, is_modified
+2023-07-21 10:24:21,819 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py', is_directory=False>
+2023-07-21 10:24:31,285 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py", inode=48613319, flags=11400, id=882023197): is_file, is_inode_meta_mod, is_modified
+2023-07-21 10:24:31,287 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py', is_directory=False>
+2023-07-21 10:24:33,313 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=882023230): is_file, is_inode_meta_mod, is_modified
+2023-07-21 10:24:33,313 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-21 10:24:44,893 - INFO - Setting up initial context.
+2023-07-21 10:24:44,893 - INFO - Initial context set up.
+2023-07-21 10:24:44,893 - DEBUG - Checking if responses and requests are in session state.
+2023-07-21 11:55:06,689 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=882839003): is_file, is_inode_meta_mod, is_modified
+2023-07-21 11:55:06,699 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-21 11:55:25,067 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py", inode=48613319, flags=11400, id=882841440): is_file, is_inode_meta_mod, is_modified
+2023-07-21 11:55:25,068 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py', is_directory=False>
+2023-07-21 11:55:33,128 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc.140335515268784", inode=48791989, flags=11900, id=882841834): is_coalesced, is_created, is_file, is_modified, is_renamed
+2023-07-21 11:55:33,129 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc", inode=48791989, flags=10800, id=882841835): is_file, is_renamed
+2023-07-21 11:55:33,129 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc", inode=48724872, flags=10800, id=882841836): is_file, is_renamed
+2023-07-21 11:55:33,129 - DEBUG - queue_event <FileCreatedEvent: event_type=created, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc.140335515268784', is_directory=False>
+2023-07-21 11:55:33,129 - DEBUG - queue_event <DirModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__', is_directory=True>
+2023-07-21 11:55:33,130 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc.140335515268784', is_directory=False>
+2023-07-21 11:55:33,130 - DEBUG - Destination event for rename is NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc", inode=48791989, flags=10800, id=882841835)
+2023-07-21 11:55:33,130 - DEBUG - queue_event <FileMovedEvent: src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc.140335515268784', dest_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc', is_directory=False>
+2023-07-21 11:55:33,131 - DEBUG - queue_event <DirModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__', is_directory=True>
+2023-07-21 11:55:33,131 - DEBUG - queue_event <DirModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__', is_directory=True>
+2023-07-21 11:55:33,132 - DEBUG - queue_event <FileDeletedEvent: event_type=deleted, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc', is_directory=False>
+2023-07-21 11:55:33,132 - DEBUG - queue_event <DirModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__', is_directory=True>
+2023-07-21 12:01:22,589 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py", inode=48613319, flags=11400, id=882849733): is_file, is_inode_meta_mod, is_modified
+2023-07-21 12:01:22,591 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py', is_directory=False>
+2023-07-21 12:01:24,028 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py", inode=48613319, flags=11400, id=882849777): is_file, is_inode_meta_mod, is_modified
+2023-07-21 12:01:24,028 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py', is_directory=False>
+2023-07-21 12:01:30,530 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc.140334432916528", inode=48792637, flags=11900, id=882850262): is_coalesced, is_created, is_file, is_modified, is_renamed
+2023-07-21 12:01:30,532 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc", inode=48792637, flags=10800, id=882850263): is_file, is_renamed
+2023-07-21 12:01:30,532 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc", inode=48791989, flags=10800, id=882850264): is_file, is_renamed
+2023-07-21 12:01:30,533 - DEBUG - queue_event <FileCreatedEvent: event_type=created, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc.140334432916528', is_directory=False>
+2023-07-21 12:01:30,539 - DEBUG - queue_event <DirModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__', is_directory=True>
+2023-07-21 12:01:30,539 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc.140334432916528', is_directory=False>
+2023-07-21 12:01:30,540 - DEBUG - Destination event for rename is NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc", inode=48792637, flags=10800, id=882850263)
+2023-07-21 12:01:30,540 - DEBUG - queue_event <FileMovedEvent: src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc.140334432916528', dest_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc', is_directory=False>
+2023-07-21 12:01:30,540 - DEBUG - queue_event <DirModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__', is_directory=True>
+2023-07-21 12:01:30,540 - DEBUG - queue_event <DirModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__', is_directory=True>
+2023-07-21 12:01:30,540 - DEBUG - queue_event <FileDeletedEvent: event_type=deleted, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc', is_directory=False>
+2023-07-21 12:01:30,540 - DEBUG - queue_event <DirModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__', is_directory=True>
+2023-07-21 12:02:12,181 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py", inode=48613319, flags=11400, id=882850981): is_file, is_inode_meta_mod, is_modified
+2023-07-21 12:02:12,182 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py', is_directory=False>
+2023-07-21 12:02:14,457 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py", inode=48613319, flags=11400, id=882851105): is_file, is_inode_meta_mod, is_modified
+2023-07-21 12:02:14,459 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py', is_directory=False>
+2023-07-21 12:02:14,471 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py", inode=48613319, flags=11400, id=882851108): is_file, is_inode_meta_mod, is_modified
+2023-07-21 12:02:14,471 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py', is_directory=False>
+2023-07-21 12:02:15,891 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py", inode=48613319, flags=11400, id=882851170): is_file, is_inode_meta_mod, is_modified
+2023-07-21 12:02:15,891 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/TutorBot.py', is_directory=False>
+2023-07-21 12:02:23,240 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc.140335515296048", inode=48792731, flags=11900, id=882851608): is_coalesced, is_created, is_file, is_modified, is_renamed
+2023-07-21 12:02:23,240 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc", inode=48792731, flags=10800, id=882851609): is_file, is_renamed
+2023-07-21 12:02:23,241 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc", inode=48792637, flags=10800, id=882851610): is_file, is_renamed
+2023-07-21 12:02:23,241 - DEBUG - queue_event <FileCreatedEvent: event_type=created, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc.140335515296048', is_directory=False>
+2023-07-21 12:02:23,241 - DEBUG - queue_event <DirModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__', is_directory=True>
+2023-07-21 12:02:23,241 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc.140335515296048', is_directory=False>
+2023-07-21 12:02:23,242 - DEBUG - Destination event for rename is NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc", inode=48792731, flags=10800, id=882851609)
+2023-07-21 12:02:23,242 - DEBUG - queue_event <FileMovedEvent: src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc.140335515296048', dest_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc', is_directory=False>
+2023-07-21 12:02:23,242 - DEBUG - queue_event <DirModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__', is_directory=True>
+2023-07-21 12:02:23,242 - DEBUG - queue_event <DirModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__', is_directory=True>
+2023-07-21 12:02:23,242 - DEBUG - queue_event <FileDeletedEvent: event_type=deleted, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__/TutorBot.cpython-39.pyc', is_directory=False>
+2023-07-21 12:02:23,242 - DEBUG - queue_event <DirModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/__pycache__', is_directory=True>
+2023-07-21 12:04:32,591 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=882854667): is_file, is_inode_meta_mod, is_modified
+2023-07-21 12:04:32,595 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-21 12:04:37,038 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=882854812): is_file, is_inode_meta_mod, is_modified
+2023-07-21 12:04:37,038 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-21 12:04:38,577 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=882854874): is_file, is_inode_meta_mod, is_modified
+2023-07-21 12:04:38,578 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-21 12:04:40,124 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=882854922): is_file, is_inode_meta_mod, is_modified
+2023-07-21 12:04:40,124 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-21 12:04:41,950 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=882854970): is_file, is_inode_meta_mod, is_modified
+2023-07-21 12:04:41,950 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-21 12:04:46,419 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=882855034): is_file, is_inode_meta_mod, is_modified
+2023-07-21 12:04:46,420 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-21 12:05:42,677 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=882856622): is_file, is_inode_meta_mod, is_modified
+2023-07-21 12:05:42,678 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-21 12:05:43,737 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=882856655): is_file, is_inode_meta_mod, is_modified
+2023-07-21 12:05:43,737 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-21 12:05:47,397 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=882856769): is_file, is_inode_meta_mod, is_modified
+2023-07-21 12:05:47,398 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-21 12:05:48,927 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=882856819): is_file, is_inode_meta_mod, is_modified
+2023-07-21 12:05:48,927 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-21 12:34:10,735 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=882929607): is_file, is_inode_meta_mod, is_modified
+2023-07-21 12:34:10,740 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-21 12:34:12,786 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=882929669): is_file, is_inode_meta_mod, is_modified
+2023-07-21 12:34:12,786 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-21 12:34:16,003 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=882929746): is_file, is_inode_meta_mod, is_modified
+2023-07-21 12:34:16,003 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-21 12:34:18,999 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=882929791): is_file, is_inode_meta_mod, is_modified
+2023-07-21 12:34:18,999 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-21 12:34:22,406 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=882929835): is_file, is_inode_meta_mod, is_modified
+2023-07-21 12:34:22,406 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
+2023-07-21 13:53:39,143 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/main.py", inode=48716745, flags=18800, id=882961649): is_file, is_renamed, is_xattr_mod
+2023-07-21 13:53:39,147 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-21 13:53:39,148 - DEBUG - queue_event <FileDeletedEvent: event_type=deleted, src_path='/Users/riteshchoudhary/Desktop/TutorBot/main.py', is_directory=False>
+2023-07-21 13:53:39,150 - DEBUG - queue_event <DirModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot', is_directory=True>
+2023-07-21 13:53:39,295 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot", inode=48473314, flags=20400, id=882961674): is_directory, is_inode_meta_mod
+2023-07-21 13:53:39,295 - DEBUG - queue_event <DirModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot', is_directory=True>
+2023-07-21 13:53:49,120 - DEBUG - NativeEvent(path="/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py", inode=48473401, flags=11400, id=882962265): is_file, is_inode_meta_mod, is_modified
+2023-07-21 13:53:49,124 - DEBUG - queue_event <FileModifiedEvent: event_type=modified, src_path='/Users/riteshchoudhary/Desktop/TutorBot/InterpreterBot.py', is_directory=False>
