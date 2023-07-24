@@ -1,6 +1,5 @@
 streamlit
 langchain
-openapi
 python-dotenv
 requests
 streamlit_chat
