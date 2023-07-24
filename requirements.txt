@@ -1,3 +1,4 @@
 streamlit
 langchain
 openapi
+python-dotenv
